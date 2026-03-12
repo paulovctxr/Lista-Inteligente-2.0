@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista-Inteligente | To-Do Moderno</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-animation"></div>
+  
+  <div class="container">
+    <div class="header">
+      <div class="header-content">
+        <i class="fas fa-check-circle"></i>
+        <h1>Lista-Inteligente</h1>
+      </div>
+      <p class="subtitle">Organize suas tarefas de forma inteligente</p>
+    </div>
+
+    <form id="task-form" class="task-form">
+      <div class="input-wrapper">
+        <i class="fas fa-plus"></i>
+        <input 
+          type="text" 
+          id="task-input" 
+          placeholder="Adicione uma nova tarefa..." 
+          autocomplete="off"
+        />
+      </div>
+      <button type="submit" class="btn-add">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </form>
+
+    <div class="tasks-info">
+      <span id="total-tasks">0 tarefas</span>
+      <button id="clear-all" class="btn-clear-all">Limpar Tudo</button>
+    </div>
+
+    <div class="task-list-wrapper">
+      <ul id="task-list" class="task-list"></ul>
+      <div id="empty-state" class="empty-state">
+        <i class="fas fa-inbox"></i>
+        <p>Nenhuma tarefa ainda!</p>
+        <p class="empty-state-small">Adicione uma tarefa acima para começar</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
